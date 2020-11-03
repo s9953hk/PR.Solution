@@ -28,7 +28,7 @@ namespace PR.Client
                     ListPatients();
                     return;
                 default: 
-                    return;n
+                    return;
      
             }
 
