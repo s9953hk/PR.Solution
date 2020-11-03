@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System.Text.Json;
 using System.Net.Http.Headers;
 using System.Net.Http;
 
@@ -76,7 +75,9 @@ namespace PR.Client
         {
             HttpClient client = new HttpClient();
 
-            string userJson = System.Text.Json.JsonSerializer.Serialize(item);
+            //string userJson = System.Text.Json.JsonSerializer.Serialize(item);
+
+            string userJson = JsonConvert.SerializeObject(item);
 
             Console.WriteLine("Dodaję pacjenta do bazy......");
 
