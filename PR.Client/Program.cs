@@ -12,36 +12,22 @@ namespace PR.Client
 {
     class Program
     {
-        static async Task Main(string[] args)
+        public static async Task Main(string[] args)
         {
 
-            HttpClient client = new HttpClient();
+            var command = ConsoleParser.Parse("pomoc");
+            await command.Execute();
 
-            Patients u = new Patients()
-
+            var exit = false;
+            while (exit == false)
             {
-                FirstName = "Test",
-                LastName = "User1"
-            };
+                Console.WriteLine();
+                Console.WriteLine("Wprowadź polecenie: ");
 
-            string userJson = JsonSerializer.Serialize(u);
+                command = ConsoleParser.Parse(Console.ReadLine());
+                exit = await command.Execute();
+            }
 
-            await client.PostAsync("https://localhost:44316/api/patients",
-                new StringContent(userJson, Encoding.UTF8, "application/json"));
         }
-    }
-
-    public class Patients
-    {
-        //[Column("Id")] // ???
-        public int Id { get; set; }
-        //[Column("FirstName")]
-        public String FirstName{ get; set; }
-        //[Column("LastName")]
-        public String LastName { get; set; }
-        //[Column("Age")]
-        public int Age { get; set; }
-        //[Column("PositiveTestResultDate")]
-        public String PositiveTestResultDate { get; set; }
     }
 }
