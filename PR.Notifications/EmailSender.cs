@@ -11,7 +11,7 @@ namespace PR.Notifications
     public class EmailSender
     {
 
-        public void SendNewUserEmail(EmailMessageRequest message)
+        public void SendNewUserEmail(MessagePayLoad message)
         {
             string messageFrom = "s9953hk@gmail.com";
 
@@ -21,7 +21,6 @@ namespace PR.Notifications
                 Credentials = new NetworkCredential(messageFrom, "@nt@lis12"),
                 EnableSsl = true,
             };
-
 
             smtpClient.Send(messageFrom, message.Recipents, message.Subject, message.Body);
 

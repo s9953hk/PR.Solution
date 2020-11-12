@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IdentityModel.Client;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace PR.Client
 {
+
 
     public static class ConsoleParser
     {
@@ -108,6 +110,7 @@ namespace PR.Client
             }
             return false;
         }
+
     }
 
 }

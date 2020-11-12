@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using System.Net.Http.Headers;
 using System.Net.Http;
 
 using Newtonsoft.Json;
+using Microsoft.Identity.Client;
 
 namespace PR.Client
 {
@@ -39,12 +39,18 @@ namespace PR.Client
 
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
+            //#3 >>>
+            string token = await Auth.GetToken();
+
+            client.DefaultRequestHeaders.Authorization = AuthenticationHeaderValue.Parse("Bearer " + token);
+            //#3 <<<
+
             HttpResponseMessage responseMessage = null;
 
             try
             {
-
-                responseMessage = await client.GetAsync("https://localhost:44317/api/patients");
+                //responseMessage = await client.GetAsync("https://localhost:44317/api/patients");
+                responseMessage = await client.GetAsync("https://localhost:5005/api/patients");
 
             }
             catch (HttpRequestException e)
@@ -75,7 +81,11 @@ namespace PR.Client
         {
             HttpClient client = new HttpClient();
 
-            //string userJson = System.Text.Json.JsonSerializer.Serialize(item);
+            //#3 >>>
+            string token = await Auth.GetToken();
+
+            client.DefaultRequestHeaders.Authorization = AuthenticationHeaderValue.Parse("Bearer " + token);
+            //#3 <<<
 
             string userJson = JsonConvert.SerializeObject(item);
 
@@ -88,7 +98,7 @@ namespace PR.Client
 
                 try
                 {
-                    await client.PostAsync("https://localhost:44317/api/patients",
+                    await client.PostAsync("https://localhost:5005/api/patients",
                     new StringContent(userJson, Encoding.UTF8, "application/json"));
 
                     Console.WriteLine("Pacjent dodany");

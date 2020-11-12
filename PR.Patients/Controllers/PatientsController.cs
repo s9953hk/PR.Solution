@@ -11,11 +11,15 @@ using PR.Patients.Services;
 
 using System.Text.Json;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
+using IdentityModel.Client;
+using System.Net.Http.Headers;
 
 namespace PR.Patients.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize] //#3
     public class PatientsController : ControllerBase
     {
         private readonly PatientsDataContext _context;
@@ -31,26 +35,46 @@ namespace PR.Patients.Controllers
         }
 
         [HttpGet]
+        //[Authorize] //#3
+        //[AllowAnonymous] //#3
         public IActionResult GetAllData()
         {
             return Ok(_context.Patients.ToList());
         }                         
         
         [HttpPost]
+        //[Authorize] //#3
         public async Task<IActionResult> Add(Patient patient)
         {
             _context.Patients.Add(patient);
             _context.SaveChanges();
 
-            await QueueMessage(new MessagePayLoad()
+
+            //#3 >> ACHTUNG MINEN - tymczasowo wylączona kolejka
+            //await QueueMessage(new MessagePayLoad()
+            //{
+            //    EventName = "NotificationEmail",
+
+            //    Recipents = patient.Email,
+
+            //    Subject = testNotificationSubject,
+            //    Body = testNotificationBody
+            //}
+            //);
+
+
+            await SendMessage(new MessagePayLoad()
             {
                 EventName = "NotificationEmail",
-                Recipents = (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development") ?
-                                            "hubert.kalinowski@gmail.com" : patient.Email,
+
+                Recipents = patient.Email,
+
                 Subject = testNotificationSubject,
                 Body = testNotificationBody
             }
             );
+
+            //#3 <<
 
             return Created("/api/users/" + patient.Id,patient);
 
@@ -63,16 +87,53 @@ namespace PR.Patients.Controllers
 
         }
 
-        private Task SendMessage(MessagePayLoad message)
+        private async Task SendMessage(MessagePayLoad message)
         {
 
 
             HttpClient client = new HttpClient();
             string messageJson = JsonSerializer.Serialize(message);
 
-            return client.PostAsync("https://localhost:5002/api/email",
+            string token = await GetToken();
+
+            client.DefaultRequestHeaders.Authorization = AuthenticationHeaderValue.Parse(token);
+
+            client.PostAsync("https://localhost:5002/api/email",
                     new StringContent( messageJson, Encoding.UTF8, "application/json"));
 
+        }
+
+        private static async Task<string> GetToken()
+        {
+            using var client = new HttpClient();
+
+            DiscoveryDocumentResponse disco = await client.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest()
+            {
+                Address = "https://login.microsoftonline.com/146ab906-a33d-47df-ae47-fb16c039ef96/v2.0/",
+                Policy =
+                {
+                ValidateEndpoints = false
+                }
+            } );
+
+
+            if (disco.IsError)
+                throw new InvalidOperationException($"No discovery document. Details: { disco.Error}");
+
+            var tokenRequest = new ClientCredentialsTokenRequest
+            {
+                Address = disco.TokenEndpoint,
+                ClientId = "67dd9cfb-4344-4cc8-a2ca-573f6bb4422f",
+                ClientSecret = "tlVkd6QAX-kcl.XP_4Yslh00-2kPS6G_9_",
+                Scope = "api://67dd9cfb-4344-4cc8-a2ca-573f6bb4422f/.default"
+            } ;
+
+            var token = await client.RequestClientCredentialsTokenAsync(tokenRequest);
+
+            if (token.IsError)
+                throw new InvalidOperationException($"Couldn't gather token. Details: { token.Error}");
+
+            return $"{ token.TokenType} { token.AccessToken}";
         }
     }
 }

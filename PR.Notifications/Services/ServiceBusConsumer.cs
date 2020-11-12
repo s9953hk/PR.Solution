@@ -45,15 +45,16 @@ namespace PR.Notifications.Services
                 EmailSender emailSender = new EmailSender();
 
 
-                //ACHTUNG MINEN - zamienić klasę EmailMessageRequest na MessagePayload
-                EmailMessageRequest emailMessage = new EmailMessageRequest()
-                {
-                    Body = payLoad.Body,
-                    Recipents = payLoad.Recipents,
-                    Subject = payLoad.Subject
-                };
+                ////ACHTUNG MINEN - zamienić klasę EmailMessageRequest na MessagePayload
+                //MessagePayLoad
+                //MessagePayLoad emailMessage = new EmailMessageRequest()
+                //{
+                //    Body = payLoad.Body,
+                //    Recipents = payLoad.Recipents,
+                //    Subject = payLoad.Subject
+                //};
 
-                emailSender.SendNewUserEmail(emailMessage);
+                emailSender.SendNewUserEmail(payLoad);
 
             }
 
@@ -62,14 +63,6 @@ namespace PR.Notifications.Services
 
         }
 
-    }
-
-    public class MessagePayLoad
-    {
-        public string EventName { get; set; }
-        public string Recipents { get; set; }
-        public string Subject { get; set; }
-        public string Body { get; set; }
     }
 
 }
