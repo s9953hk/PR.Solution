@@ -32,7 +32,6 @@ namespace PR.Client
             }
         }
 
-
         public async Task<IEnumerable<IItem>> GetAll()
         {
             HttpClient client = new HttpClient();
@@ -51,7 +50,6 @@ namespace PR.Client
             {
                 //responseMessage = await client.GetAsync("https://localhost:44317/api/patients");
                 responseMessage = await client.GetAsync("https://localhost:5005/api/patients");
-
             }
             catch (HttpRequestException e)
             {
@@ -98,10 +96,17 @@ namespace PR.Client
 
                 try
                 {
-                    await client.PostAsync("https://localhost:5005/api/patients",
-                    new StringContent(userJson, Encoding.UTF8, "application/json"));
 
-                    Console.WriteLine("Pacjent dodany");
+                    HttpResponseMessage responseMessage = await client.PostAsync("https://localhost:5005/api/patients",
+                        new StringContent(userJson, Encoding.UTF8, "application/json"));
+                    if (responseMessage.StatusCode == System.Net.HttpStatusCode.Created)
+                    {
+                        Console.WriteLine("Pacjent dodany");
+                    }
+                    else
+                    {
+                        Console.WriteLine(responseMessage.ToString()); //#4
+                    }
                 }
 
                 catch (HttpRequestException e)

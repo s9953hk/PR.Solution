@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Logging;
 using PR.Notifications.Services;
+using Serilog;
 
 namespace PR.Notifications
 {
@@ -28,11 +29,14 @@ namespace PR.Notifications
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //#4
+            services.AddApplicationInsightsTelemetry();
+
             services.AddControllers();
 
             services.AddSingleton<ServiceBusConsumer>();
 
-            //#3 >> ACHTUNG MINEN
+            //#3 >>
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -76,6 +80,10 @@ namespace PR.Notifications
 
             var bus = app.ApplicationServices.GetService<ServiceBusConsumer>();
             bus.Register();
+
+            //#4 
+            app.UseSerilogRequestLogging();
+
         }
     }
 }

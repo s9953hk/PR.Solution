@@ -1,0 +1,249 @@
+2020-11-26 14:41:23.199 +01:00 [DBG] Hosting starting
+2020-11-26 14:41:23.491 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 14:41:23.537 +01:00 [DBG] Reading data from file 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys\key-163e96f2-ea7d-4933-bf7c-f5f0f4595053.xml'.
+2020-11-26 14:41:23.560 +01:00 [DBG] Reading data from file 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys\key-1faa9a57-1500-40d1-af83-fbbc2286b623.xml'.
+2020-11-26 14:41:23.571 +01:00 [DBG] Found key {163e96f2-ea7d-4933-bf7c-f5f0f4595053}.
+2020-11-26 14:41:23.583 +01:00 [DBG] Found key {1faa9a57-1500-40d1-af83-fbbc2286b623}.
+2020-11-26 14:41:23.600 +01:00 [DBG] Considering key {163e96f2-ea7d-4933-bf7c-f5f0f4595053} with expiration date 2021-02-06 07:49:44Z as default key.
+2020-11-26 14:41:23.625 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.7.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-26 14:41:23.638 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-26 14:41:23.642 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.7.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-26 14:41:23.660 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-26 14:41:23.676 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-26 14:41:23.691 +01:00 [DBG] Using key {163e96f2-ea7d-4933-bf7c-f5f0f4595053} as the default key.
+2020-11-26 14:41:23.694 +01:00 [DBG] Key ring with default key {163e96f2-ea7d-4933-bf7c-f5f0f4595053} was loaded during application startup.
+2020-11-26 14:41:25.125 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-26 14:41:25.401 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C2E233B75BE96279526D67C6E61B02F2A8D42DA5)
+2020-11-26 14:41:25.415 +01:00 [INF] Now listening on: https://localhost:5005
+2020-11-26 14:41:25.417 +01:00 [DBG] Loaded hosting startup assembly PR.Patients
+2020-11-26 14:41:25.420 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 14:41:25.422 +01:00 [INF] Hosting environment: Development
+2020-11-26 14:41:25.427 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Patients
+2020-11-26 14:41:25.448 +01:00 [DBG] Hosting started
+2020-11-26 14:44:42.715 +01:00 [DBG] Connection id "0HM4I25MSNKQJ" accepted.
+2020-11-26 14:44:42.719 +01:00 [DBG] Connection id "0HM4I25MSNKQJ" started.
+2020-11-26 14:44:42.869 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/api/patients  
+2020-11-26 14:44:42.876 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2020-11-26 14:44:42.878 +01:00 [VRB] All hosts are allowed.
+2020-11-26 14:44:42.915 +01:00 [DBG] 1 candidate(s) found for the request path '/api/patients'
+2020-11-26 14:44:42.924 +01:00 [DBG] Endpoint 'PR.Patients.Controllers.PatientsController.GetAllData (PR.Patients)' with route pattern 'api/Patients' is valid for the request path '/api/patients'
+2020-11-26 14:44:42.930 +01:00 [DBG] Request matched endpoint 'PR.Patients.Controllers.PatientsController.GetAllData (PR.Patients)'
+2020-11-26 14:44:43.651 +01:00 [INF] Successfully validated the token.
+2020-11-26 14:44:43.657 +01:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-11-26 14:44:43.669 +01:00 [INF] Authorization was successful.
+2020-11-26 14:44:43.673 +01:00 [INF] Executing endpoint 'PR.Patients.Controllers.PatientsController.GetAllData (PR.Patients)'
+2020-11-26 14:44:43.687 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-11-26 14:44:43.738 +01:00 [INF] Route matched with {action = "GetAllData", controller = "Patients"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllData() on controller PR.Patients.Controllers.PatientsController (PR.Patients).
+2020-11-26 14:44:43.747 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-11-26 14:44:43.750 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-11-26 14:44:43.754 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-11-26 14:44:43.763 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-11-26 14:44:43.767 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-11-26 14:44:43.771 +01:00 [DBG] Executing controller factory for controller PR.Patients.Controllers.PatientsController (PR.Patients)
+2020-11-26 14:44:43.905 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2020-11-26 14:44:43.956 +01:00 [DBG] Executed controller factory for controller PR.Patients.Controllers.PatientsController (PR.Patients)
+2020-11-26 14:44:43.961 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-26 14:44:43.966 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-26 14:44:43.973 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-26 14:44:43.979 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-26 14:44:43.989 +01:00 [INF] Executing action method PR.Patients.Controllers.PatientsController.GetAllData (PR.Patients) - Validation state: "Valid"
+2020-11-26 14:44:44.420 +01:00 [INF] Entity Framework Core 3.1.9 initialized 'PatientsDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-26 14:44:44.577 +01:00 [DBG] queryContext => new QueryingEnumerable<Patient>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Patient>, 
+    PR.Patients.Model.PatientsDataContext, 
+    null
+)
+2020-11-26 14:44:44.611 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-11-26 14:44:44.666 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (51ms).
+2020-11-26 14:44:44.674 +01:00 [DBG] Opening connection to database 'PRData' on server 'tcp:prserverhk.database.windows.net,1433'.
+2020-11-26 14:45:11.546 +01:00 [ERR] An error occurred using the connection to database 'PRData' on server 'tcp:prserverhk.database.windows.net,1433'.
+2020-11-26 14:45:11.562 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'PR.Patients.Model.PatientsDataContext'.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Database 'PRData' on server 'prserverhk.database.windows.net' is not currently available.  Please retry the connection later.  If the problem persists, contact customer support, and provide them the session tracing ID of '{F4C37C13-88C2-44FB-A0BC-32D575ECD148}'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+ClientConnectionId:7f22db4a-a2a4-491e-bdf6-a9156b6ca7e6
+Error Number:40613,State:1,Class:20
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Database 'PRData' on server 'prserverhk.database.windows.net' is not currently available.  Please retry the connection later.  If the problem persists, contact customer support, and provide them the session tracing ID of '{F4C37C13-88C2-44FB-A0BC-32D575ECD148}'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+ClientConnectionId:7f22db4a-a2a4-491e-bdf6-a9156b6ca7e6
+Error Number:40613,State:1,Class:20
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-11-26 14:45:11.637 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-26 14:45:11.643 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-26 14:45:11.647 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-26 14:45:11.653 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-26 14:45:11.673 +01:00 [INF] Executed action PR.Patients.Controllers.PatientsController.GetAllData (PR.Patients) in 27892.4711ms
+2020-11-26 14:45:11.679 +01:00 [INF] Executed endpoint 'PR.Patients.Controllers.PatientsController.GetAllData (PR.Patients)'
+2020-11-26 14:45:11.685 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Database 'PRData' on server 'prserverhk.database.windows.net' is not currently available.  Please retry the connection later.  If the problem persists, contact customer support, and provide them the session tracing ID of '{F4C37C13-88C2-44FB-A0BC-32D575ECD148}'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+ClientConnectionId:7f22db4a-a2a4-491e-bdf6-a9156b6ca7e6
+Error Number:40613,State:1,Class:20
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at PR.Patients.Controllers.PatientsController.GetAllData() in C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Patients\Controllers\PatientsController.cs:line 42
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-26 14:45:11.792 +01:00 [DBG] Connection id "0HM4I25MSNKQJ" completed keep alive response.
+2020-11-26 14:45:11.801 +01:00 [DBG] 'PatientsDataContext' disposed.
+2020-11-26 14:45:11.810 +01:00 [INF] Request finished in 28945.6927ms 500 text/plain
+2020-11-26 14:45:51.203 +01:00 [DBG] Connection id "0HM4I25MSNKQJ" reset.
+2020-11-26 14:45:51.227 +01:00 [DBG] Connection id "0HM4I25MSNKQJ" sending FIN because: "The client closed the connection."
+2020-11-26 14:45:51.239 +01:00 [DBG] Connection id "0HM4I25MSNKQJ" disconnecting.
+2020-11-26 14:45:51.251 +01:00 [DBG] Connection id "0HM4I25MSNKQJ" stopped.
+2020-11-26 14:46:12.770 +01:00 [DBG] Connection id "0HM4I25MSNKQK" accepted.
+2020-11-26 14:46:12.775 +01:00 [DBG] Connection id "0HM4I25MSNKQK" started.
+2020-11-26 14:46:12.860 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/api/patients  
+2020-11-26 14:46:12.864 +01:00 [VRB] All hosts are allowed.
+2020-11-26 14:46:12.867 +01:00 [DBG] 1 candidate(s) found for the request path '/api/patients'
+2020-11-26 14:46:12.871 +01:00 [DBG] Endpoint 'PR.Patients.Controllers.PatientsController.GetAllData (PR.Patients)' with route pattern 'api/Patients' is valid for the request path '/api/patients'
+2020-11-26 14:46:12.879 +01:00 [DBG] Request matched endpoint 'PR.Patients.Controllers.PatientsController.GetAllData (PR.Patients)'
+2020-11-26 14:46:12.886 +01:00 [INF] Successfully validated the token.
+2020-11-26 14:46:12.889 +01:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-11-26 14:46:12.897 +01:00 [INF] Authorization was successful.
+2020-11-26 14:46:12.899 +01:00 [INF] Executing endpoint 'PR.Patients.Controllers.PatientsController.GetAllData (PR.Patients)'
+2020-11-26 14:46:12.904 +01:00 [INF] Route matched with {action = "GetAllData", controller = "Patients"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllData() on controller PR.Patients.Controllers.PatientsController (PR.Patients).
+2020-11-26 14:46:12.912 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-11-26 14:46:12.916 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-11-26 14:46:12.920 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-11-26 14:46:12.928 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-11-26 14:46:12.932 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-11-26 14:46:12.937 +01:00 [DBG] Executing controller factory for controller PR.Patients.Controllers.PatientsController (PR.Patients)
+2020-11-26 14:46:12.944 +01:00 [DBG] Executed controller factory for controller PR.Patients.Controllers.PatientsController (PR.Patients)
+2020-11-26 14:46:12.947 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-26 14:46:12.951 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-26 14:46:12.955 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-26 14:46:12.959 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-26 14:46:12.962 +01:00 [INF] Executing action method PR.Patients.Controllers.PatientsController.GetAllData (PR.Patients) - Validation state: "Valid"
+2020-11-26 14:46:13.002 +01:00 [INF] Entity Framework Core 3.1.9 initialized 'PatientsDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-26 14:46:13.008 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-11-26 14:46:13.010 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2020-11-26 14:46:13.012 +01:00 [DBG] Opening connection to database 'PRData' on server 'tcp:prserverhk.database.windows.net,1433'.
+2020-11-26 14:46:14.023 +01:00 [DBG] Opened connection to database 'PRData' on server 'tcp:prserverhk.database.windows.net,1433'.
+2020-11-26 14:46:14.041 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Age], [p].[Email], [p].[First_Name], [p].[Last_Name], [p].[Test_Date]
+FROM [Patients] AS [p]
+2020-11-26 14:46:14.187 +01:00 [INF] Executed DbCommand (146ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Age], [p].[Email], [p].[First_Name], [p].[Last_Name], [p].[Test_Date]
+FROM [Patients] AS [p]
+2020-11-26 14:46:14.253 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.295 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.306 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.310 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.314 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.322 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.327 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.331 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.339 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.343 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.350 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.355 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.359 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.362 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.368 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.371 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.374 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.376 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.382 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.385 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.388 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.391 +01:00 [DBG] Context 'PatientsDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-26 14:46:14.403 +01:00 [DBG] A data reader was disposed.
+2020-11-26 14:46:14.408 +01:00 [DBG] Closing connection to database 'PRData' on server 'tcp:prserverhk.database.windows.net,1433'.
+2020-11-26 14:46:14.423 +01:00 [DBG] Closed connection to database 'PRData' on server 'tcp:prserverhk.database.windows.net,1433'.
+2020-11-26 14:46:14.435 +01:00 [INF] Executed action method PR.Patients.Controllers.PatientsController.GetAllData (PR.Patients), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1465.2158ms.
+2020-11-26 14:46:14.440 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-26 14:46:14.445 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-26 14:46:14.448 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-26 14:46:14.452 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-26 14:46:14.456 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-26 14:46:14.461 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-26 14:46:14.465 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-11-26 14:46:14.469 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter"]
+2020-11-26 14:46:14.482 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2020-11-26 14:46:14.487 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-11-26 14:46:14.492 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PR.Patients.Model.Patient, PR.Patients, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-11-26 14:46:14.518 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-11-26 14:46:14.521 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-26 14:46:14.527 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-26 14:46:14.531 +01:00 [INF] Executed action PR.Patients.Controllers.PatientsController.GetAllData (PR.Patients) in 1594.6071ms
+2020-11-26 14:46:14.534 +01:00 [INF] Executed endpoint 'PR.Patients.Controllers.PatientsController.GetAllData (PR.Patients)'
+2020-11-26 14:46:14.541 +01:00 [DBG] Connection id "0HM4I25MSNKQK" completed keep alive response.
+2020-11-26 14:46:14.544 +01:00 [DBG] 'PatientsDataContext' disposed.
+2020-11-26 14:46:14.547 +01:00 [INF] Request finished in 1688.6319ms 200 application/json; charset=utf-8
+2020-11-26 14:47:54.551 +01:00 [DBG] Connection id "0HM4I25MSNKQK" received FIN.
+2020-11-26 14:47:54.561 +01:00 [DBG] Connection id "0HM4I25MSNKQK" sending FIN because: "The client closed the connection."
+2020-11-26 14:47:54.574 +01:00 [DBG] Connection id "0HM4I25MSNKQK" disconnecting.
+2020-11-26 14:47:54.586 +01:00 [DBG] Connection id "0HM4I25MSNKQK" stopped.
+2020-11-26 14:50:51.371 +01:00 [INF] Application is shutting down...
+2020-11-26 14:50:51.373 +01:00 [DBG] Hosting stopping
+2020-11-26 14:50:51.385 +01:00 [DBG] Hosting stopped

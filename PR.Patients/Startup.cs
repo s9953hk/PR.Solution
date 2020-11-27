@@ -15,6 +15,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Logging;
 using PR.Patients.Model;
 using PR.Patients.Services;
+using Serilog;
 
 namespace PR.Patients
 {
@@ -30,6 +31,10 @@ namespace PR.Patients
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            //#4 >>
+            services.AddApplicationInsightsTelemetry();
+
             services.AddControllers(options =>
                   {
                       options.RespectBrowserAcceptHeader = true;
@@ -94,9 +99,12 @@ namespace PR.Patients
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("swagger/v1/swagger.json", "PR.Patients description");
-            }
+            } );
 
-            );
+            //#4 
+            app.UseSerilogRequestLogging();
+
+           
         }
     }
 }

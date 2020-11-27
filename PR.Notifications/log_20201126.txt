@@ -1,0 +1,91 @@
+2020-11-26 14:41:22.963 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 14:41:23.728 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 14:41:23.730 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 14:41:23.731 +01:00 [INF] Hosting environment: Development
+2020-11-26 14:41:23.733 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 14:44:24.318 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 14:44:24.789 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 14:44:24.794 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 14:44:24.796 +01:00 [INF] Hosting environment: Development
+2020-11-26 14:44:24.799 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 14:45:55.894 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 14:45:56.497 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 14:45:56.499 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 14:45:56.501 +01:00 [INF] Hosting environment: Development
+2020-11-26 14:45:56.502 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 14:50:43.069 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 14:50:43.585 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 14:50:43.587 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 14:50:43.589 +01:00 [INF] Hosting environment: Development
+2020-11-26 14:50:43.590 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 14:50:47.448 +01:00 [INF] Application is shutting down...
+2020-11-26 14:50:58.766 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 14:50:59.300 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 14:50:59.302 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 14:50:59.304 +01:00 [INF] Hosting environment: Development
+2020-11-26 14:50:59.306 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 14:53:28.732 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 14:53:29.271 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 14:53:29.273 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 14:53:29.277 +01:00 [INF] Hosting environment: Development
+2020-11-26 14:53:29.279 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 15:06:51.455 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 15:06:52.023 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 15:06:52.026 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 15:06:52.028 +01:00 [INF] Hosting environment: Development
+2020-11-26 15:06:52.030 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 15:07:29.988 +01:00 [INF] Application is shutting down...
+2020-11-26 15:07:35.848 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 15:07:36.338 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 15:07:36.344 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 15:07:36.353 +01:00 [INF] Hosting environment: Development
+2020-11-26 15:07:36.356 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 15:12:09.130 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 15:12:09.628 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 15:12:09.630 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 15:12:09.632 +01:00 [INF] Hosting environment: Development
+2020-11-26 15:12:09.634 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 15:23:20.312 +01:00 [INF] Application is shutting down...
+2020-11-26 15:27:56.719 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 15:27:57.264 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 15:27:57.267 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 15:27:57.268 +01:00 [INF] Hosting environment: Development
+2020-11-26 15:27:57.270 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 15:40:14.768 +01:00 [INF] Application is shutting down...
+2020-11-26 15:42:49.193 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 15:42:49.675 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 15:42:49.677 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 15:42:49.679 +01:00 [INF] Hosting environment: Development
+2020-11-26 15:42:49.681 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 15:44:17.697 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 15:44:18.224 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 15:44:18.226 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 15:44:18.228 +01:00 [INF] Hosting environment: Development
+2020-11-26 15:44:18.229 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 15:45:17.159 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 15:45:17.678 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 15:45:17.681 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 15:45:17.683 +01:00 [INF] Hosting environment: Development
+2020-11-26 15:45:17.685 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 15:47:16.777 +01:00 [INF] Application is shutting down...
+2020-11-26 15:47:22.244 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 15:47:22.848 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 15:47:22.851 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 15:47:22.852 +01:00 [INF] Hosting environment: Development
+2020-11-26 15:47:22.854 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 15:49:03.936 +01:00 [INF] Application is shutting down...
+2020-11-26 15:49:09.133 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 15:49:09.625 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 15:49:09.627 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 15:49:09.629 +01:00 [INF] Hosting environment: Development
+2020-11-26 15:49:09.631 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 15:51:05.918 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 15:51:06.426 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 15:51:06.429 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 15:51:06.430 +01:00 [INF] Hosting environment: Development
+2020-11-26 15:51:06.432 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-26 15:54:18.741 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-26 15:54:19.262 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-26 15:54:19.264 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-26 15:54:19.266 +01:00 [INF] Hosting environment: Development
+2020-11-26 15:54:19.269 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications

@@ -1,0 +1,45 @@
+2020-11-15 11:24:35.286 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-15 11:24:36.902 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-15 11:24:36.905 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-15 11:24:36.911 +01:00 [INF] Hosting environment: Development
+2020-11-15 11:24:36.915 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-15 11:25:13.676 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:5002/api/email application/json; charset=utf-8 316
+2020-11-15 11:25:17.532 +01:00 [INF] Successfully validated the token.
+2020-11-15 11:25:17.546 +01:00 [INF] Authorization was successful.
+2020-11-15 11:25:17.549 +01:00 [INF] Executing endpoint 'PR.Notifications.Controllers.EmailController.Send (PR.Notifications)'
+2020-11-15 11:25:17.591 +01:00 [INF] Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature Void Send(PR.Notifications.Model.MessagePayLoad) on controller PR.Notifications.Controllers.EmailController (PR.Notifications).
+2020-11-15 11:25:19.421 +01:00 [INF] Executed action PR.Notifications.Controllers.EmailController.Send (PR.Notifications) in 1809.0851ms
+2020-11-15 11:25:19.440 +01:00 [INF] Executed endpoint 'PR.Notifications.Controllers.EmailController.Send (PR.Notifications)'
+2020-11-15 11:25:19.468 +01:00 [INF] Request finished in 5794.0356ms 200 
+2020-11-15 11:51:34.368 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-15 11:51:35.476 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-15 11:51:35.479 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-15 11:51:35.482 +01:00 [INF] Hosting environment: Development
+2020-11-15 11:51:35.485 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-15 11:52:27.168 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:5002/api/email application/json; charset=utf-8 328
+2020-11-15 11:52:30.743 +01:00 [INF] Successfully validated the token.
+2020-11-15 11:52:30.759 +01:00 [INF] Authorization was successful.
+2020-11-15 11:52:30.762 +01:00 [INF] Executing endpoint 'PR.Notifications.Controllers.EmailController.Send (PR.Notifications)'
+2020-11-15 11:52:30.812 +01:00 [INF] Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature Void Send(PR.Notifications.Model.MessagePayLoad) on controller PR.Notifications.Controllers.EmailController (PR.Notifications).
+2020-11-15 11:52:32.222 +01:00 [INF] Executed action PR.Notifications.Controllers.EmailController.Send (PR.Notifications) in 1389.5536ms
+2020-11-15 11:52:32.240 +01:00 [INF] Executed endpoint 'PR.Notifications.Controllers.EmailController.Send (PR.Notifications)'
+2020-11-15 11:52:32.260 +01:00 [INF] Request finished in 5095.0942ms 200 
+2020-11-15 11:59:26.723 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-15 11:59:27.800 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-15 11:59:27.802 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-15 11:59:27.804 +01:00 [INF] Hosting environment: Development
+2020-11-15 11:59:27.807 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-15 12:00:12.211 +01:00 [INF] User profile is available. Using 'C:\Users\hkalinowski\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-15 12:00:12.749 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-15 12:00:12.752 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-15 12:00:12.754 +01:00 [INF] Hosting environment: Development
+2020-11-15 12:00:12.757 +01:00 [INF] Content root path: C:\Users\hkalinowski\Source\Repos\PR.Solution\PR.Notifications
+2020-11-15 12:00:54.257 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:5002/api/email application/json; charset=utf-8 327
+2020-11-15 12:00:55.062 +01:00 [INF] Successfully validated the token.
+2020-11-15 12:00:55.074 +01:00 [INF] Authorization was successful.
+2020-11-15 12:00:55.077 +01:00 [INF] Executing endpoint 'PR.Notifications.Controllers.EmailController.Send (PR.Notifications)'
+2020-11-15 12:00:55.108 +01:00 [INF] Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature Void Send(PR.Notifications.Model.MessagePayLoad) on controller PR.Notifications.Controllers.EmailController (PR.Notifications).
+2020-11-15 12:00:56.399 +01:00 [INF] Executed action PR.Notifications.Controllers.EmailController.Send (PR.Notifications) in 1277.9245ms
+2020-11-15 12:00:56.407 +01:00 [INF] Executed endpoint 'PR.Notifications.Controllers.EmailController.Send (PR.Notifications)'
+2020-11-15 12:00:56.415 +01:00 [INF] Request finished in 2162.1212ms 200 
+2020-11-15 12:07:35.781 +01:00 [INF] Application is shutting down...

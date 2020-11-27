@@ -14,6 +14,7 @@ using System.Text;
 using Microsoft.AspNetCore.Authorization;
 using IdentityModel.Client;
 using System.Net.Http.Headers;
+using System.Text.RegularExpressions;
 
 namespace PR.Patients.Controllers
 {
@@ -40,18 +41,51 @@ namespace PR.Patients.Controllers
         public IActionResult GetAllData()
         {
             return Ok(_context.Patients.ToList());
-        }                         
+        }
+
+        //#4
+        [AllowAnonymous]
+        [HttpPut]
+        public IActionResult InvalidAction()
+        {
+            throw new InvalidOperationException("Symulowany problem z aplikacją");
+        }
         
         [HttpPost]
         //[Authorize] //#3
         public async Task<IActionResult> Add(Patient patient)
         {
+
+            //#4 >>
+            string validEmailPattern = @"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|"
+                + @"([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(?<!\.)"
+                + @"@[a-z0-9][\w\.-]*[a-z0-9]\.[a-z][a-z\.]*[a-z]$";
+
+            Regex emailValidator = new Regex(validEmailPattern, RegexOptions.IgnoreCase);
+
+            bool validEmail = emailValidator.IsMatch(patient.Email);
+            //#4 <<
+
             _context.Patients.Add(patient);
             _context.SaveChanges();
 
 
             //#3 >> ACHTUNG MINEN - tymczasowo wylączona kolejka
-            //await QueueMessage(new MessagePayLoad()
+            //#4 Kolejka ponownie włączona
+            await QueueMessage(new MessagePayLoad()
+                {
+                    EventName = "NotificationEmail",
+
+                    Recipents = patient.Email,
+
+                    Subject = testNotificationSubject,
+                    Body = testNotificationBody
+                }
+            );
+
+
+
+            //await SendMessage(new MessagePayLoad()
             //{
             //    EventName = "NotificationEmail",
 
@@ -62,19 +96,12 @@ namespace PR.Patients.Controllers
             //}
             //);
 
-
-            await SendMessage(new MessagePayLoad()
+            //#4 >>
+            if (!validEmail)
             {
-                EventName = "NotificationEmail",
-
-                Recipents = patient.Email,
-
-                Subject = testNotificationSubject,
-                Body = testNotificationBody
+                throw new InvalidOperationException("Wystąpił błąd podczas dodawania pacjenta - błędny email: " + patient.Email);
             }
-            );
-
-            //#3 <<
+            //#4 <<
 
             return Created("/api/users/" + patient.Id,patient);
 

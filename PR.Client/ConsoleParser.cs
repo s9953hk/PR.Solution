@@ -25,7 +25,6 @@ namespace PR.Client
                 case "pomoc": return new HelpCommand();
                 case "nowy": return new NewPatientCommand(arg);
                 case "lista": return new ListCommand(arg);
-
                 default: return new UnrecognizedCommand();
 
             }
